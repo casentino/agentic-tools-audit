@@ -8,6 +8,7 @@ Last updated: 2026-08-04
 
 | File | Summary | Tags | Updated |
 |------|---------|------|---------|
+| [claude-code.md](claude-code.md) | Claude Code's extension model and six-axis scores. | claude-code, agentic-cli | 2026-08-04 |
 
 ## Recent Changes
 
