@@ -1,0 +1,13 @@
+# Re-derivable measurement inputs. Re-ingesting restores them.
+.wiki/output/projects/*/data/raw/
+
+# macOS
+.DS_Store
+
+# Python (arrives with the measurement pipeline)
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+
+# Agent scratch state
+.superpowers/
