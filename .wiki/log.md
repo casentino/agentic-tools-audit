@@ -7,3 +7,5 @@
 ## [2026-08-04] compile | 1 source → claude-code profile scored on six axes
 
 ## [2026-08-04] compile | 1 source → codex-cli profile scored on six axes
+
+## [2026-08-04] compile | 1 source → cursor profile scored on six axes
