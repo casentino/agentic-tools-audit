@@ -14,7 +14,7 @@ Design specs and implementation plans live in `docs/superpowers/`.
 
 Read `AGENTS.md` before making changes — it is the repository's own contributor guide and takes precedence over generic defaults. Its binding decisions:
 
-- **Planned layout** (create these only when implementation actually begins): code in `src/`, tests mirroring `src/` under `tests/`, docs in `docs/`, sanitized fixtures in `tests/fixtures/`. Keep the root for project-wide files (`README.md`, manifests, tool config).
+- **Planned layout** (create these only when implementation actually begins): code in `src/`, tests mirroring `src/` under `tests/`, sanitized fixtures in `tests/fixtures/`. `docs/` is not planned — it already exists and holds design specs and plans at `docs/superpowers/`. Keep the root for project-wide files (`README.md`, manifests, tool config).
 - **Never commit** generated output, dependency directories, or local audit results.
 - **Indentation**: two spaces for Markdown, YAML, and JSON. UTF-8, final newline, spaces over tabs unless the language demands otherwise.
 - **Naming**: `kebab-case` for docs and shell files, `snake_case` for Python modules, `PascalCase` for exported types/classes.

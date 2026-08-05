@@ -27,7 +27,7 @@ Add tests with every feature and bug fix. Mirror `src/` organization under `test
 
 ## Commit & Pull Request Guidelines
 
-The repository has no commit history from which to infer a house style. Use concise Conventional Commit subjects, such as `feat: add tool inventory scanner` or `docs: define audit workflow`. Keep each commit focused. Pull requests should explain the problem and solution, list validation performed, link related issues, and note follow-up work. Include screenshots only for user-visible changes and call out configuration or security implications explicitly.
+The repository's commit history already establishes a Conventional Commit house style. Use concise Conventional Commit subjects, such as `feat: add tool inventory scanner` or `docs: define audit workflow`. Keep each commit focused. Pull requests should explain the problem and solution, list validation performed, link related issues, and note follow-up work. Include screenshots only for user-visible changes and call out configuration or security implications explicitly.
 
 ## Security & Configuration
 
