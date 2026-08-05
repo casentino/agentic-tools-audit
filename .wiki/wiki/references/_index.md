@@ -8,6 +8,7 @@ Last updated: 2026-08-04
 
 | File | Summary | Tags | Updated |
 |------|---------|------|---------|
+| [rubric-scoreboard.md](rubric-scoreboard.md) | Six-axis scores for all four profiled tools, with spread. | rubric, comparison | 2026-08-04 |
 
 ## Recent Changes
 
