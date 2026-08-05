@@ -1,7 +1,7 @@
 ---
 title: "Specificity-Ordered Precedence"
 category: concept
-sources: ["raw/notes/2026-08-04-codex-cli-extension-model.md", "raw/notes/2026-08-04-cursor-extension-model.md"]
+sources: ["raw/notes/2026-08-04-codex-cli-extension-model.md", "raw/notes/2026-08-04-cursor-extension-model.md", "raw/notes/2026-08-04-claude-code-extension-model.md"]
 created: 2026-08-04
 updated: 2026-08-04
 tags: [pattern, composition]
@@ -62,3 +62,4 @@ When authoring plugin rule or skill files with overlapping `paths` scope, or nes
 
 - [OpenAI Codex CLI Extension Model](../../raw/notes/2026-08-04-codex-cli-extension-model.md) — first sighting; closer-file-wins via concatenation order
 - [Cursor Extension Model](../../raw/notes/2026-08-04-cursor-extension-model.md) — second sighting; nested `AGENTS.md` child-wins precedence
+- [Claude Code Extension Model](../../raw/notes/2026-08-04-claude-code-extension-model.md) — the contrasting case this card's Problem and Technique sections rest on: both Claude Code documentation quotes ("if two rules contradict each other, Claude may pick one arbitrarily..." and "All discovered files are concatenated into context rather than overriding each other") are recorded in that note's composition-gap paragraph, verified against the primary docs. This is a third listed source, not a third sighting — the two-sighting rule is a floor, and the card's qualification is unchanged: Claude Code appears here as the tool that *lacks* the technique, not as a place it was sighted.
