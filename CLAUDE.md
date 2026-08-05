@@ -14,8 +14,8 @@ Design specs and implementation plans live in `docs/superpowers/`.
 
 Read `AGENTS.md` before making changes — it is the repository's own contributor guide and takes precedence over generic defaults. Its binding decisions:
 
-- **Planned layout** (create these only when implementation actually begins): code in `src/`, tests mirroring `src/` under `tests/`, sanitized fixtures in `tests/fixtures/`. `docs/` is not planned — it already exists and holds design specs and plans at `docs/superpowers/`. Keep the root for project-wide files (`README.md`, manifests, tool config).
-- **Never commit** generated output, dependency directories, or local audit results.
+- **Planned layout** (create these only when implementation actually begins): outside `.wiki/`, code in `src/`, tests mirroring `src/` under `tests/`, sanitized fixtures in `tests/fixtures/`. Code that serves the wiki is the stated exception — it belongs in `.wiki/output/projects/<slug>/code/` with its tests alongside, matching how llm-wiki organizes project code. `docs/` is not planned — it already exists and holds design specs and plans at `docs/superpowers/`. Keep the root for project-wide files (`README.md`, manifests, tool config).
+- **Do not commit** dependency directories or raw collection material. Measurement summaries under `.wiki/output/projects/*/data/` are the record and *do* belong in version control; anything a re-ingest can reproduce stays ignored.
 - **Indentation**: two spaces for Markdown, YAML, and JSON. UTF-8, final newline, spaces over tabs unless the language demands otherwise.
 - **Naming**: `kebab-case` for docs and shell files, `snake_case` for Python modules, `PascalCase` for exported types/classes.
 - **Commits**: Conventional Commit subjects, one focused change per commit.
