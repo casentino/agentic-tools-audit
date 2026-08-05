@@ -15,3 +15,5 @@
 ## [2026-08-04] compile | 4 profiles → rubric scoreboard with per-axis spread
 
 ## [2026-08-04] compile | 4 profiles → 4 pattern cards, 4 backlog candidates
+
+## [2026-08-04] lint | Structure, indexes, and links verified; statistics recounted

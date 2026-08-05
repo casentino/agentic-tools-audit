@@ -6,10 +6,11 @@ Last updated: 2026-08-04
 
 ## Statistics
 
-- Sources: 0 raw documents
-- Articles: 0 compiled wiki articles
+- Sources: 4 raw documents
+- Articles: 9 compiled wiki articles
+- Candidates: 4 backlog candidates
 - Outputs: 0 generated artifacts
-- Last compiled: never
+- Last compiled: 2026-08-04
 - Last lint: never
 
 ## Quick Navigation
@@ -27,3 +28,4 @@ Last updated: 2026-08-04
 
 - 2026-08-04: Initialized the wiki.
 - 2026-08-04: Promoted 4 portable patterns from the four profiles' Extension Model sections to `wiki/concepts/`, each with 2-3 sightings, and opened 4 backlog candidates in `inventory/candidates/`.
+- 2026-08-04: Recounted statistics from actual file counts (4 sources, 9 articles, 4 candidates, 0 outputs) and verified structure, frontmatter, indexes, and links by hand; `/wiki:lint --local` was not invocable in this session.
