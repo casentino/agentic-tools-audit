@@ -24,7 +24,19 @@ Two instruction files that both apply to the current task but give conflicting g
 
 When a more specific instruction file (nested deeper in the directory tree, or otherwise scoped narrower) can overlap with a broader one, state a rule that the narrower file wins on conflict, and apply that rule deterministically rather than leaving both in context as an unresolved contradiction.
 
-Codex CLI states the rule for its own `AGENTS.md` nesting as a direct consequence of concatenation order: "Codex concatenates files from the root down, joining them with blank lines. Files closer to your current directory override earlier guidance because they appear later in the combined prompt." Cursor states the identical rule for its nested `AGENTS.md` files: "Instructions from nested `AGENTS.md` files are combined with parent directories, with more specific instructions taking precedence" — the child directory's file is the more specific source and wins on conflict.
+Two tools compute this order automatically from file position, so the author never has to write it down: a file physically closer to (or nested under) the current working directory is concatenated later, or is otherwise flagged as the more specific source, and wins when it disagrees with a broader file above it (see Sightings for the exact mechanism each uses).
+
+A tool that does not compute this — Claude Code concatenates nested memory files "rather than overriding each other," with no positional precedence rule — needs the equivalent stated by the author instead of computed by the host. The minimal fragment is one sentence at the top of the narrower file, naming what it overrides and for which files:
+
+```markdown
+# API Rules (src/api/**)
+
+This overrides the general TypeScript style guide above for files under
+`src/api/`: prefer explicit return types on every exported function, even
+where the broader guide allows inference.
+```
+
+Without that sentence, both files simply sit in context together and, per Claude Code's own documented failure mode, "Claude may pick one arbitrarily" when they disagree.
 
 ## Sightings
 

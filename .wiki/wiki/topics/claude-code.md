@@ -43,7 +43,7 @@ Version examined: 2.1.221 (Claude Code)
 
 ## Portability
 
-Claude Code already gives a plugin author enforced permission gating, enforced state-size limits, and deterministic hook merging — a porting target does not need to invent any of those. What a plugin author still has to work around by hand: there is no tool-enforced way to arbitrate two skills/subagents whose descriptions both plausibly match a prompt (must write descriptions defensively instead), and there is no built-in structured log of *why* a hook blocked something beyond its own exit code and stderr.
+Claude Code already gives a plugin author enforced permission gating, enforced state-size limits, and deterministic hook merging — a porting target does not need to invent any of those. What a plugin author still has to work around by hand: there is no tool-enforced way to arbitrate two skills/subagents whose descriptions both plausibly match a prompt (must write descriptions defensively instead), and there is no built-in structured log of *why* a hook blocked something beyond its own exit code and stderr. This is also why "gating side effects behind an explicit approval step" — sighted across Claude Code, Codex CLI, and Cursor during pattern promotion — was not promoted to a portable pattern card: this axis is already Claude Code's own strongest, so there is nothing to port in (see [wiki/concepts/_index.md](../concepts/_index.md#considered-not-promoted)).
 
 ## See Also
 
