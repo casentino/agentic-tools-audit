@@ -24,7 +24,7 @@ When the only way an agent learns "this extension applies right now" is a free-t
 
 Give the extension's frontmatter a glob field the tool checks mechanically against files the agent is currently reading or editing, and treat that as an independent activation path alongside (not a replacement for) description-based matching.
 
-Cursor's `.mdc` rules document this directly as one of four scoping mechanisms: `globs` alone drives "Apply to Specific Files," whose documented trigger reads "When file matches a specified pattern," and whose row in the frontmatter-behavior table (`alwaysApply: false`, no `description`, `globs` provided) reads "Auto-attached when a matching file is in context." Calling that a mechanical, tool-computed path match is this card's characterization, not the page's wording. The page gives its example patterns verbatim, among them `*.ts`, `**/*.ts`, `src/**`, and `src/**/*.tsx`.
+Cursor's `.mdc` rules document this directly as one of four scoping mechanisms: `globs` alone drives "Apply to Specific Files," whose documented trigger reads "When file matches a specified pattern", and whose row in the frontmatter-behavior table (`alwaysApply: false`, no `description`, `globs` provided) reads "Auto-attached when a matching file is in context." Calling that a mechanical, tool-computed path match is this card's characterization, not the page's wording. The page gives its example patterns verbatim, among them `*.ts`, `**/*.ts`, `src/**`, and `src/**/*.tsx`.
 
 Claude Code's own rule and skill frontmatter carry the identical mechanism under the field name `paths`, confirmed directly against the current docs:
 
@@ -42,7 +42,7 @@ paths:
 
 ## Sightings
 
-- **Cursor** — https://cursor.com/docs/context/rules — "Apply to Specific Files" (`globs` frontmatter field), documented trigger "When file matches a specified pattern," with the frontmatter-behavior table adding "Auto-attached when a matching file is in context." Example patterns `*`, `**`, `*.ts`, `**/*.ts`, `src/**`, `src/**/*.tsx` are given verbatim on the page. That this constitutes a mechanical, tool-computed path match is this card's reading of those two sentences, not a quotation from them.
+- **Cursor** — https://cursor.com/docs/context/rules — "Apply to Specific Files" (`globs` frontmatter field), documented trigger "When file matches a specified pattern", with the frontmatter-behavior table adding "Auto-attached when a matching file is in context." Example patterns `*`, `**`, `*.ts`, `**/*.ts`, `src/**`, `src/**/*.tsx` are given verbatim on the page. That this constitutes a mechanical, tool-computed path match is this card's reading of those two sentences, not a quotation from them.
 - **Claude Code** — https://code.claude.com/docs/en/memory (Path-specific rules section) and https://code.claude.com/docs/en/skills (`paths` frontmatter row) — a `paths` field on both `.claude/rules/*.md` files and `SKILL.md` frontmatter, documented as glob-matched, tool-computed activation; confirmed unused on this machine's own eight rule files, all of which therefore load unconditionally regardless of project type.
 
 ## Porting Cost and Risk
