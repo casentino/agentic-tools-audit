@@ -2,7 +2,11 @@
 
 ## Project Structure & Module Organization
 
-This repository is in its bootstrap state: it contains no tracked source, tests, assets, or build configuration. Keep the root for project-wide files such as `README.md`, manifests, and tool configuration. When implementation begins, place code in `src/`, tests in `tests/`, documentation in `docs/`, and sanitized test data in `tests/fixtures/`. Organize modules by responsibility, and avoid committing generated output, dependency directories, or local audit results.
+This repository holds a knowledge wiki, not an application. The wiki lives in `.wiki/`, built with [llm-wiki](https://github.com/nvk/llm-wiki); inside that directory, llm-wiki conventions govern layout, frontmatter, and indexes. Keep the root for project-wide files such as `README.md`, manifests, and tool configuration, and keep design specs and plans in `docs/`.
+
+Outside `.wiki/`, place code in `src/`, tests in `tests/`, and sanitized test data in `tests/fixtures/`. Code that serves the wiki is the exception: it belongs in `.wiki/output/projects/<slug>/code/` with its tests alongside, matching how llm-wiki organizes project code.
+
+Do not commit dependency directories or raw collection material. Measurement summaries under `.wiki/output/projects/*/data/` are the record and belong in version control; anything a re-ingest can reproduce stays ignored.
 
 ## Build, Test, and Development Commands
 
