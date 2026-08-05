@@ -45,6 +45,10 @@ Reads used, stated per this series' aggregation convention (`discoverability` ce
 
 The persistence pair — a thread-scoped, super-step-checkpointed history plus a separately namespaced cross-thread store, with a documented `exit`/`async`/`sync` durability knob — is the clearest thing worth porting: a Claude Code plugin author building anything that must survive a crash or a long pause has a concrete schema to copy rather than inventing one. The static `interrupt_before`/`interrupt_after` compile-time breakpoint list is a second candidate: a tool-checked, pause-before-or-after-this-named-unit-runs primitive that needs no per-call-site code, closer in kind to a hook matcher than to `interrupt()`'s opt-in, per-call-site approval pattern — though the docs' own steer of static interrupts toward debugging rather than production HITL gating (see `side-effect-control` above) means a plugin author should port the mechanical-breakpoint *idea*, not assume LangGraph endorses this exact use of it.
 
+## See Also
+
+- [[tiered-persistence-split|Tiered Persistence Split]] ([Tiered Persistence Split](../concepts/tiered-persistence-split.md)) — technique sighted here (checkpointer vs. store, the clearest engineered version of the split)
+
 ## Sources
 
 - [LangGraph Extension Model](../../raw/notes/2026-08-04-langgraph-extension-model.md) — graph composition, checkpointers, store, interrupts

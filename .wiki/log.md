@@ -13,3 +13,5 @@
 ## [2026-08-04] compile | 1 source → langgraph profile scored on six axes
 
 ## [2026-08-04] compile | 4 profiles → rubric scoreboard with per-axis spread
+
+## [2026-08-04] compile | 4 profiles → 4 pattern cards, 4 backlog candidates

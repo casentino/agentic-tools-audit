@@ -47,6 +47,12 @@ Version examined: codex-cli 0.144.1 (local install; documentation examined is th
 
 Two things worth lifting directly: a numeric, enforced context-budget cap on concatenated instruction files (not just "keep it short" guidance), and a rules engine that resolves overlapping permission patterns by evaluating sub-commands separately and taking the most restrictive result, rather than trusting the first matching prefix. The hook merge policy is a cautionary counter-example — "all matching hooks run, none override" is documented but leaves real conflicts unresolved; a Claude Code plugin author gets more mileage from Claude Code's own dedup-and-precedence hook merge than from copying this one.
 
+## See Also
+
+- [[deferred-reference-loading|Deferred Reference Loading]] ([Deferred Reference Loading](../concepts/deferred-reference-loading.md)) — technique sighted here (skill progressive disclosure with a numeric resident-budget cap)
+- [[tiered-persistence-split|Tiered Persistence Split]] ([Tiered Persistence Split](../concepts/tiered-persistence-split.md)) — technique sighted here (session rollouts vs. the opt-in Memories system)
+- [[specificity-ordered-precedence|Specificity-Ordered Precedence]] ([Specificity-Ordered Precedence](../concepts/specificity-ordered-precedence.md)) — technique sighted here (closer-`AGENTS.md`-wins via concatenation order)
+
 ## Sources
 
 - [OpenAI Codex CLI Extension Model](../../raw/notes/2026-08-04-codex-cli-extension-model.md) — instruction files, configuration, approval modes

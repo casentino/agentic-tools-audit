@@ -47,6 +47,12 @@ Version examined: 3.14.7 (installed Cursor.app, via `plutil -p .../Info.plist`)
 
 Cursor's clearest lesson for a Claude Code plugin author is deterministic, glob-based auto-attach as a companion to description matching: a skill that mechanically checks file globs needs no model judgment call for the common "does this apply to the file I'm touching" case. Its two-location, concatenated `permissions.json` (user + workspace, with a documented precedence and a UI that locks read-only once a file-based allowlist is set) is a reusable pattern for layering permission config. Its "Output panel → dedicated log channel" is a concrete, low-effort observability primitive worth copying for MCP-heavy plugins.
 
+## See Also
+
+- [[deferred-reference-loading|Deferred Reference Loading]] ([Deferred Reference Loading](../concepts/deferred-reference-loading.md)) — technique sighted here (`@filename.ts` deferred file reference inside a rule body)
+- [[path-scoped-activation|Path-Scoped Activation]] ([Path-Scoped Activation](../concepts/path-scoped-activation.md)) — technique sighted here (`globs`-driven "Apply to Specific Files")
+- [[specificity-ordered-precedence|Specificity-Ordered Precedence]] ([Specificity-Ordered Precedence](../concepts/specificity-ordered-precedence.md)) — technique sighted here (nested `AGENTS.md` child-wins precedence)
+
 ## Sources
 
 - [Cursor Extension Model](../../raw/notes/2026-08-04-cursor-extension-model.md) — rule format, scoping fields, MCP surface

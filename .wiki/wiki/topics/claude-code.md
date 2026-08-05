@@ -45,6 +45,12 @@ Version examined: 2.1.221 (Claude Code)
 
 Claude Code already gives a plugin author enforced permission gating, enforced state-size limits, and deterministic hook merging — a porting target does not need to invent any of those. What a plugin author still has to work around by hand: there is no tool-enforced way to arbitrate two skills/subagents whose descriptions both plausibly match a prompt (must write descriptions defensively instead), and there is no built-in structured log of *why* a hook blocked something beyond its own exit code and stderr.
 
+## See Also
+
+- [[deferred-reference-loading|Deferred Reference Loading]] ([Deferred Reference Loading](../concepts/deferred-reference-loading.md)) — technique sighted here (skill description/body split; the `wiki-manager` reference-file example)
+- [[path-scoped-activation|Path-Scoped Activation]] ([Path-Scoped Activation](../concepts/path-scoped-activation.md)) — technique sighted here (`paths` frontmatter on skills and rules)
+- [[tiered-persistence-split|Tiered Persistence Split]] ([Tiered Persistence Split](../concepts/tiered-persistence-split.md)) — technique sighted here (session transcripts vs. auto memory)
+
 ## Sources
 
 - [Claude Code Extension Model](../../raw/notes/2026-08-04-claude-code-extension-model.md) — extension units, loading order, permission surface
