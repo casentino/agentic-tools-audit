@@ -63,6 +63,7 @@ Added to the global set:
 - A pattern card requires sightings in at least two places. A single sighting stays in its profile.
 - Reference the owner's plugin sources by path. Never copy them into `raw/`.
 - Mark inferences as inferences. Never present one as a recorded fact.
+- Verify quotations against raw sources, not a summarizing fetch. A summarizing fetch renders a page through a model and can report a present phrase as absent, or a verbatim sentence as a paraphrase — three findings during this wiki's own review were that artifact rather than real defects. Mintlify-hosted docs serve raw markdown when `.md` is appended to the doc URL (`code.claude.com/docs/en/*`, `learn.chatgpt.com/docs/*`, `docs.langchain.com/oss/python/langgraph/*`); `cursor.com/docs/*.md` returns 404, so fetch that page with `curl` and search its raw HTML payload instead.
 
 ## Article Boundaries
 
