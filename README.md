@@ -53,6 +53,7 @@ The wiki records what it could not settle, rather than smoothing it over. All of
 | `.wiki/wiki/references/` | The cross-tool scoreboard |
 | `.wiki/wiki/theses/` | Thesis investigations (created, none written yet) |
 | `.wiki/inventory/candidates/` | Proposed plugin changes |
+| `docs/next-session.md` | What is left to do, in the order that costs least to do wrong |
 | `docs/superpowers/specs/` | Design specs |
 | `docs/superpowers/plans/` | Implementation plans |
 | `docs/superpowers/reports/` | Build records — the ledger and per-task verification reports |
