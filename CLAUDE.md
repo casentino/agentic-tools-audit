@@ -34,12 +34,7 @@ These rules are what get work rejected here. `.wiki/schema.md` is authoritative;
 
 ## Open questions — do not silently resolve these
 
-All are recorded in the scoreboard's `## Where the Rubric Strained` section. If you act on one, say so explicitly; each moves published numbers.
-
-- Whether Claude Code's `discoverability = 2` should be `3`, given its documented `paths` glob field on both skills and rules — the same class of mechanism that earned Cursor a `3`.
-- Whether the `composition` 3-vs-2 split between Claude Code and Codex CLI survives, since Codex CLI's own hook docs describe the deny-wins arbitration its profile says it lacks.
-- Whether `observability` deserves revision, having returned `2` for all four tools.
-- `/wiki:lint --local` has never run. It is a slash command, so no agent can invoke it — a human must. The master index correctly records `Last lint: never`.
+All previously recorded open questions (discoverability score aggregation, composition 3-vs-2 split, observability review, and lint execution) were resolved in the 2026-08-15 session. There are currently no open questions.
 
 ## AGENTS.md is authoritative
 
