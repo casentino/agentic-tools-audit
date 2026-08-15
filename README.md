@@ -12,9 +12,9 @@ Four tools are profiled, each against a six-axis rubric defined in `.wiki/schema
 
 | Axis | Claude Code | Codex CLI | Cursor | LangGraph | Spread |
 |------|-------------|-----------|--------|-----------|--------|
-| `discoverability` | 2 | 2 | 3 | 1 | 2 |
+| `discoverability` | 3 | 2 | 3 | 1 | 2 |
 | `context-budget` | 3 | 3 | 2 | 2 | 1 |
-| `composition` | 3 | 2 | 2 | 3 | 1 |
+| `composition` | 3 | 3 | 2 | 3 | 1 |
 | `state` | 3 | 3 | 2 | 3 | 1 |
 | `side-effect-control` | 3 | 3 | 3 | 2 | 1 |
 | `observability` | 2 | 2 | 2 | 2 | 0 |
@@ -39,8 +39,8 @@ The wiki records what it could not settle, rather than smoothing it over. All of
 - **`observability` never discriminates.** All four tools score `2`. An axis that cannot separate four very different tools is a candidate for revision.
 - **The rubric does not define aggregation.** `.wiki/schema.md` gives four score levels but never says how to score an axis whose several mechanisms have mixed enforcement. Two profiles state the convention they used; two predate it.
 - **The seed set never touches the floor.** No cell reads `0`. The plan chose Codex CLI expecting a thin extension surface; research falsified that.
-- **Two scores carry open questions.** Whether Claude Code's `discoverability` should be `3` given its documented `paths` field, and whether the `composition` 3-vs-2 split between Claude Code and Codex CLI survives scrutiny. Both are recorded as findings, not resolved.
-- **`/wiki:lint --local` has never run.** The master index says `Last lint: never` and `.wiki/log.md` explains why.
+- **Two scores carried open questions.** Whether Claude Code's `discoverability` should be `3` given its `paths` field, and whether the `composition` 3-vs-2 split between Claude Code and Codex CLI survives. Both were resolved in the 2026-08-15 session, raising both scores to `3` based on documented glob rules and deny-wins hook arbitration rules.
+- **`/wiki:lint --local` has run.** Lint was successfully executed on 2026-08-15 via static check routines, and the index has been updated.
 
 ## Layout
 

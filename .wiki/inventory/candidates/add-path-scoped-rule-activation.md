@@ -1,10 +1,10 @@
 ---
 title: "Add Path-Scoped Activation to Stack-Specific Rules"
 kind: task
-status: proposed
+status: ingested
 priority: p1
 created: 2026-08-04
-updated: 2026-08-04
+updated: 2026-08-15
 last_checked: 2026-08-04
 next_action: "Add a paths: frontmatter glob (e.g. paths: [\"**/*.ts\", \"**/*.tsx\"]) to each TypeScript/JavaScript-specific file under ~/.claude/rules/ so it stops loading unconditionally in non-TS/JS repositories."
 sources:
