@@ -11,3 +11,6 @@ __pycache__/
 
 # Agent scratch state
 .superpowers/
+
+# Local clones for target repository analysis
+clones/
